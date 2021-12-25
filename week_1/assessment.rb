@@ -53,3 +53,17 @@ students = [
         name: "Mohamed"
     }
 ]
+
+# First Solution
+# new_students = []
+# for x in 0..students.length-1 do
+#     if students[x].fetch(:id) + students[x].fetch(:id) < 10
+#         new_students << students[x]
+#     end
+   
+# end
+# puts new_students
+
+ 
+# Second Solution :D 
+# puts students.keep_if{|key| students[1+ students.find_index(key)] != nil && key.fetch(:id) + students[1+ students.find_index(key)].fetch(:id) < 10}
