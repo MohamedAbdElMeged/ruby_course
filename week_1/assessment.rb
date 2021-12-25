@@ -57,7 +57,9 @@ students = [
 # First Solution
 # new_students = []
 # for x in 0..students.length-1 do
-#     if students[x].fetch(:id) + students[x].fetch(:id) < 10
+#     next_element = students[x+1]
+#     if  next_element != nil && students[x].fetch(:id) + next_element.fetch(:id) < 10
+#         puts students[x].fetch(:id) + next_element.fetch(:id)
 #         new_students << students[x]
 #     end
    
@@ -66,4 +68,4 @@ students = [
 
  
 # Second Solution :D 
-# puts students.keep_if{|key| students[1+ students.find_index(key)] != nil && key.fetch(:id) + students[1+ students.find_index(key)].fetch(:id) < 10}
+ puts students.keep_if{|key| students[1+ students.find_index(key)] != nil && key.fetch(:id) + students[1+ students.find_index(key)].fetch(:id) <10}
